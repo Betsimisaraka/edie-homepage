@@ -1,0 +1,23 @@
+{
+  "name": "edie-homepage",
+  "version": "1.0.0",
+  "description": "Challenge: Create a static page with HTML and CSS following the designs. Don’t look at the existing solution. Fulfill user stories below:",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass scss -o webroot/css",
+    "css:watch": "npm run css && node-sass scss -w -o webroot/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Betsimisaraka/edie-homepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Betsimisaraka/edie-homepage/issues"
+  },
+  "homepage": "https://github.com/Betsimisaraka/edie-homepage#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
