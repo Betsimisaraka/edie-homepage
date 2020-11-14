@@ -1,0 +1,84 @@
+@import "variables";
+
+.footer {
+    background: #100E1D;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    & .footer__list__container {
+        padding-bottom: 64px;
+        & .footer__list {
+            & .footer__list--items {
+                list-style: none;
+                & .footer__list--items-links {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 200%;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    & .footer_social {
+        padding-bottom: 65px;
+    }
+}
+
+.footer_social__lists {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_social__lists > .footer_social__lists--items {
+    list-style: none;
+}
+
+.footer_social__lists > .footer_social__lists--items + .footer_social__lists--items {
+    margin-left: 11px;
+}
+
+.footer_social__lists > .footer_social__lists--items a {
+    display: block;
+    text-indent: -9999px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
+
+.footer_social__lists > .footer_social__lists--items:nth-child(1) a {
+    background-image: url('../images/instagram.svg');
+}
+
+.footer_social__lists > .footer_social__lists--items:nth-child(2) a{
+    background-image: url('../images/linkedin.svg');
+}
+
+.footer_social__lists > .footer_social__lists--items:nth-child(3) a {
+    background-image: url('../images/twitter.svg');
+}
+
+.name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+@media (min-width: 1000px) {
+    .footer_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 46px;
+        padding-left: 137px;
+        padding-right: 137px;
+    }
+}

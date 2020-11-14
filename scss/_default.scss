@@ -1,0 +1,103 @@
+@import "variables";
+
+html {
+    font-family: ' Poppins';
+    font-weight: 1rem;
+}
+
+body, h1, h2, p, label, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+article, body > header, .masthead__image {
+    padding-left: 10px;
+    padding-right: 17px;
+}
+
+.container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    & .form__label {
+        @include md-fonts
+        color: $form-label-color;
+        padding-bottom: 9px;
+    }
+    & .form__fieldset {
+        border: none;
+        width: 200px;
+        height: 47px;
+        background: $fieldset-background;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0.2rem;
+        & .form__input {
+            padding: 11px 21px 11px 21px;
+            border: none;
+            background: $fieldset-background;
+            outline: none;
+        }
+        & .form__button {
+            background: $button-background;
+            border-radius: 12px;
+            padding: 11px 21px 11px 21px;
+            border: none;
+            @include md-fonts;
+            color: $fieldset-background;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        padding-left: 277px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+        & .form__label {
+            @include md-fonts
+            color: $form-label-color;
+            padding-bottom: 9px;
+        }
+        & .form__fieldset {
+            border: none;
+            width: 350px;
+            height: 57px;
+            background: $fieldset-background;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            & .form__input {
+                padding: 11px 27px 11px 27px;
+                border: none;
+                background: $fieldset-background;
+                outline: none;
+            }
+            & .form__button {
+                background: $button-background;
+                border-radius: 12px;
+                padding: 11px 27px 11px 27px;
+                border: none;
+                @include md-fonts;
+                color: $fieldset-background;
+            }
+        }
+    }
+}
