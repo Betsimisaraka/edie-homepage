@@ -1,10 +1,11 @@
 @import "variables";
 
 .footer {
-    background: #100E1D;
-    color: #FFFFFF;
+    background:$footer-background;
+    color: $base-color;
     display: flex;
     flex-direction: column;
+    padding-top: 36px;
     & .footer__list__container {
         padding-bottom: 64px;
         & .footer__list {
@@ -16,7 +17,7 @@
                     font-weight: normal;
                     font-size: 18px;
                     line-height: 200%;
-                    color: #FFFFFF;
+                    color: $base-color;
                     text-decoration: none;
                 }
             }
@@ -62,12 +63,8 @@
 }
 
 .name {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #A9A9A9;
+    @include exsmb-fonts;
+    color: $name-color;
     text-align: center;
     padding-bottom: 45px;
 }

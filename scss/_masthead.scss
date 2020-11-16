@@ -2,20 +2,12 @@
 
 .masthead {
     & .masthead__question {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-        color: #2D9CDB;
+        @include smb-fonts;
+        color: $header-question-color;
     }
     & .masthead__heading {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
-        color: #333333;
+        @include lg-fonts;
+        color: $bg-heading-color;
     }
     & .masthead__heading--create {
         padding-bottom: 15px;
@@ -31,12 +23,8 @@
         padding-top: 22px;
     }
     & .masthead__paragraph {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 18px;
-        color: #4F4F4F;
+        @include smn-fonts;
+        color: $paragraph-color;
         padding-bottom: 33px;
         padding-top: 31px;
     }

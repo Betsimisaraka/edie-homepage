@@ -1,20 +1,13 @@
 @import "variables";
 
 .site_header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend %flex-row-sb;
     padding-top: 13px;
     padding-bottom: 48px;
 }
 
 .site_header__heading {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 35px;    
-    color: $bg-heading-color;
+    @include lbg-heading;
 }
 
 .site_header__label {
@@ -95,12 +88,7 @@ input[type="checkbox"]:checked ~ .site_header .site_header__label {
         padding-top: 42px;
         padding-bottom: 96px;
         & .site_header__heading {
-            font-family: 'Heebo';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 36px;
-            line-height: 53px;
-            color: $bg-heading-color;
+            @include lbgd-heading;
         }
     }
     .site_header__navigation {

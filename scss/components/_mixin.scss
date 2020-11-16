@@ -1,3 +1,21 @@
+@mixin lbgd-heading {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+    color: $bg-heading-color;
+}
+
+@mixin lbg-heading {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;    
+    color: $bg-heading-color; 
+}
+
 @mixin bg-heading {
     font-family: 'Poppins';
     font-style: normal;
@@ -32,12 +50,36 @@
     line-height: 36px;
 }
 
+@mixin lgb-fonts {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
 @mixin md-fonts {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+}
+
+@mixin mdn-fonts {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin mdb-fonts {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;    
 }
 
 @mixin exsm-fonts {
@@ -48,10 +90,44 @@
     line-height: 21px;
 }
 
+@mixin exsmb-fonts {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@mixin smb-fonts {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@mixin smn-fonts {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+
 @mixin sm-fonts {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+%flex-row-sb {
+    @include flex-row;
 }

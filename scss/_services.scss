@@ -1,0 +1,106 @@
+@import "variables";
+
+.section_services {
+    padding-bottom: 73px;
+    padding-top: 2px;
+    & .section_services__heading {
+        @include lg-fonts;
+        color: $bg-heading-color;
+        padding-bottom: 92px;
+        padding-left: 49px;
+        padding-right: 67px;
+    }
+    & .section_services__lists {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        & .section_services__lists--items {
+            padding-right: 34px;
+            padding-left: 34px;
+            padding-top: 49px;
+            padding-bottom: 43px;
+        }
+        & .section_services__lists--items:hover {
+            background: #FFFFFF;
+            box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+            border-radius: 24px;
+        }
+    }
+}
+
+.section_services__lists .section_services__lists--items + .section_services__lists--items {
+    margin-top: 32px;
+}
+
+.icon {
+    border-radius: 16px;
+    border: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 19px;
+    padding-left: 19px;
+}
+
+.section_services__lists--items-edit {
+    background: #2D9CDB;
+}
+
+.section_services__lists--items-tag {
+    background: #27AE60;
+}
+
+.section_services__lists--items-menu {
+    background: #EB5757;
+}
+
+.section_services__lists--items-job {
+    @include lgb-fonts;
+    color: $bg-heading-color;
+    padding-bottom: 24px;
+    padding-top: 35px;
+}
+
+.section_services__lists--items-des {
+    @include mdn-fonts;
+    color: $paragraph-color;
+    padding-bottom: 30px;
+}
+
+.section_services__lists--items-start {
+    background: #E0E0E0;
+    border-radius: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 13px;
+    padding-left: 13px;
+    border: unset;
+    @include mdb-fonts;
+    color: $form-label-color;
+}
+
+.section_services__lists--items-start--blue {
+    color:$base-color;
+    background: $button-background;
+}
+
+@media (min-width: 1000px) {
+    .section_services {
+        padding-bottom: 73px;
+        padding-top: 2px;
+        & .section_services__heading {
+            @include exlg-fonts;
+            padding-bottom: 88px;
+            padding-left: unset;
+            padding-right: unset;
+            width: 300px;
+        }
+        & .section_services__lists {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .section_services__lists .section_services__lists--items + .section_services__lists--items {
+        margin-top: unset;
+    }
+}
