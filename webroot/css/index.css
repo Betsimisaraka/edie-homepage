@@ -480,3 +480,60 @@ input[type="checkbox"]:checked ~ .site_header .site_header__label {
   .section_design__lists > li:nth-child(4) {
     grid-column: 2 / 3;
     grid-row: 5 / 8; } }
+
+.section_quotes {
+  padding-top: 100px;
+  padding-bottom: 103px; }
+  .section_quotes .section_quotes__quotes {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    padding-bottom: 27px; }
+  .section_quotes .section_quotes__author {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+
+.section_quotes__container {
+  margin-left: -3rem; }
+
+.section_quotes__author--avatar {
+  width: 82px;
+  height: 82px;
+  border-radius: 12px; }
+
+.section_quotes__author--name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  padding-bottom: 12px; }
+
+.section_quotes__author--job {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #828282; }
+
+@media (min-width: 1000px) {
+  .section_quotes {
+    padding-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+    .section_quotes .section_quotes__quotes {
+      grid-column: 1 / 6;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+      color: #333333;
+      padding-bottom: 36px; }
+    .section_quotes .section_quotes__author {
+      grid-column: 1 / 3; } }
