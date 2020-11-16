@@ -16,6 +16,14 @@
     color: $paragraph-color;
 }
 
+@mixin exlg-fonts {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+}
+
 @mixin lg-fonts {
     font-family: 'Poppins';
     font-style: normal;
@@ -30,4 +38,20 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+}
+
+@mixin exsm-fonts {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+@mixin sm-fonts {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
 }

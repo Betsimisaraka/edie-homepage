@@ -23,6 +23,9 @@
     & .masthead__image {
         width: 100%;
         border-radius: 18px;
+        margin-left: 10px;
+        margin-right: 17px;
+
     }
     & .masthead__heading--story {
         padding-top: 22px;
@@ -56,6 +59,10 @@
         & .masthead__heading {
             @include bg-heading
         }
+        & .masthead__image {
+            margin-left: 52px;
+            margin-right: 56px;
+        }
         & .masthead__heading--create {
             padding-top: 16px;
             padding-bottom: 42px;
@@ -65,7 +72,7 @@
             padding-top: 42px;
         }
         & .masthead__paragraph {
-            @include prgraph
+            @include prgraph;
             padding-bottom: 42px;
             padding-top: 42px;
         }  
