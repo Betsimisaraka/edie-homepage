@@ -1,0 +1,54 @@
+$font-callback: Arial, Helvetica, sans-serif;
+$base-font: 'Poppins';
+$font-stack: $base-font, $font-callback;
+
+
+$fonts-faces: 
+    (
+        name: 'Heebo Regular',
+        family: 'Heebo',
+        system-name: 'Heebo-Regular',
+        filename: 'heebo',
+        style: 'normal',
+        weight: 800,
+    ),
+    (
+        name: 'Montserrat Semi_Bold',
+        family: 'Montserrat',
+        system-name: 'Montserrat-Semi_Bold',
+        filename: 'montserrat-semi-bold',
+        style: 'normal',
+        weight: 600,
+    ),
+    (
+        name: 'Poppins Bold',
+        family: 'Poppins',
+        system-name: 'Poppins-Bold',
+        filename: 'poppins-bold',
+        style: 'normal',
+        weight: 700,
+    ),
+    (
+        name: 'Poppins Medium',
+        family: 'Poppins',
+        system-name: 'Poppins-Medium',
+        filename: 'poppins-medium',
+        style: 'normal',
+        weight: 500,
+    ),
+    (
+        name: 'Poppins Regular',
+        family: 'Poppins',
+        system-name: 'Poppins-Regular',
+        filename: 'poppins-regular',
+        style: 'normal',
+        weight: 400,
+    ),
+    (
+        name: 'Poppins Light',
+        family: 'Poppins',
+        system-name: 'Poppins-Light',
+        filename: 'poppins-light',
+        style: 'normal',
+        weight: 300,
+    )

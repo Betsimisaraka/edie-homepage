@@ -3,8 +3,49 @@
   flex-direction: row;
   justify-content: space-between; }
 
+@font-face {
+  font-family: "Heebo";
+  src: local("Heebo Regular"), local("Heebo-Regular"), url("../fonts/heebo.woff2") format("woff2"), url("../fonts/heebo.woff") format("woff");
+  font-weight: 800;
+  font-style: "normal"; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Semi_Bold"), local("Montserrat-Semi_Bold"), url("../fonts/montserrat-semi-bold.woff2") format("woff2"), url("../fonts/montserrat-semi-bold.woff") format("woff");
+  font-weight: 600;
+  font-style: "normal"; }
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("../fonts/poppins-bold.woff2") format("woff2"), url("../fonts/poppins-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: "normal"; }
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("../fonts/poppins-medium.woff2") format("woff2"), url("../fonts/poppins-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: "normal"; }
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/poppins-regular.woff2") format("woff2"), url("../fonts/poppins-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: "normal"; }
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Light"), local("Poppins-Light"), url("../fonts/poppins-light.woff2") format("woff2"), url("../fonts/poppins-light.woff") format("woff");
+  font-weight: 300;
+  font-style: "normal"; }
+
+.site_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 html {
-  font-family: ' Poppins';
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 1rem; }
 
 body, h1, h2, h3, h4, p, label, ul, li {
@@ -175,6 +216,8 @@ body > header {
         line-height: 36px;
         color: #333333;
         text-decoration: none; }
+      .site_header__navigation .site_header__navigation--lists .site_header__navigation--lists-items .site_header__navigation--lists-items--links:hover {
+        color: #000000; }
 
 input[type="checkbox"] {
   position: absolute;
@@ -291,9 +334,9 @@ input[type="checkbox"]:checked ~ .site_header .site_header__label {
 
 @media (min-width: 1000px) {
   .masthead__container1 {
-    width: 450px; }
+    width: 550px; }
   .masthead__container2 {
-    width: 300px; }
+    width: 400px; }
   .masthead .masthead__question {
     font-family: 'Poppins';
     font-style: normal;
@@ -737,7 +780,7 @@ input[type="checkbox"]:checked ~ .site_header .site_header__label {
       padding-bottom: 88px;
       padding-left: unset;
       padding-right: unset;
-      width: 300px; }
+      width: 400px; }
     .section_services .section_services__lists {
       display: flex;
       flex-direction: row;

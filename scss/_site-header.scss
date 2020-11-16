@@ -49,6 +49,9 @@
                 color: $bg-heading-color;
                 text-decoration: none;
             }
+            & .site_header__navigation--lists-items--links:hover {
+                color: #000000;
+            }
         }
     }
 }
